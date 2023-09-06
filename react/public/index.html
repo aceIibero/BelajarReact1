@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="root"></div>
+
+    <script src="react.js"></script>
+    <script src="react-dom.js"></script>
+    <!-- <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> -->
+    <script src="app.js"></script>
+
+<!-- <script>
+
+        NATIVE JS
+
+        const root = document.querySelector('#root');
+
+        const element = document.createElement('h2');
+        element.textContent = 'JAJAL JS';
+        element.className = 'h2';
+
+        root.appendChild(element)
+</script> -->
+
+
+
+<!-- <script>
+
+        REACT JS
+
+        const root = document.querySelector('.root');
+
+        const element = React.createElement('h2',{
+            children: 'Jajal React !',
+            className: 'h2'
+        });
+
+        ReactDOM.render(element, root);
+</script> -->
+
+
+
+<!-- <script>
+    REACT JS OUTPUT pembungkus
+
+    const root = document.querySelector('.root');
+
+    const p1 = React.createElement('p',{
+        children: 'Jajal React 1',
+        className: 'p1'
+    });
+    const p2 = React.createElement('p',{
+        children: 'Jajal React 2',
+        className: 'p2'
+    });
+
+    //  React.Fragment (pembungkus langsung alternative jika tidak memungkinkan mmenggunakan div atau lainnya)
+    const element = React.createElement(React.Fragment,{
+        children: [p1,p2],
+        className: 'div'
+    });
+
+    ReactDOM.render(element, root);
+</script> -->
+
+
+
+<!-- <script>
+    const root = document.querySelector('.root');
+
+    const li1 = React.createElement('li',{
+    children: 'Jajal React 1',
+    className: 'li1'
+    });
+    const li2 = React.createElement('li',{
+    children: 'Jajal React 1',
+    className: 'li2'
+    });
+    const li3 = React.createElement('li',{
+    children: 'Jajal React 1',
+    className: 'li3'
+    });
+
+    const element = React.createElement('ul',{
+        children: [li1,li2,li3],
+    });
+
+    ReactDOM.render(element, root);
+</script> -->
+
+
+
+<!-- <script>
+    const root = document.querySelector('.root');
+
+    const element = React.createElement
+    ('ul',
+    //parameter 1
+
+    // parameter 2 bisa null, atau diisi seperlunya contoh classname    
+    {className: 'list'},
+
+    // parameter ke 3 dst konten render, bisa diisi sebuah object
+    React.createElement('li', null, 'React1'),
+    React.createElement('li', {className: 'react2'}, 'React2'),
+    React.createElement('li', null, 'React3')
+
+    );
+
+    ReactDOM.render(element, root);
+</script> -->
+
+<!-- <script type="text/babel">
+    const root = document.querySelector('.root')
+
+    const element= (
+        <div>
+           {new Date().toLocaleDateString()}
+        </div>
+
+        // <ul>
+        //     <li>YAa</li>
+        //     <li>Yaaaa</li>
+        //     <li>YAAAAaaaaa</li>
+        // </ul>
+    )
+
+    ReactDOM.render(element,root );
+</script> -->
+
+</body>
+</html>
